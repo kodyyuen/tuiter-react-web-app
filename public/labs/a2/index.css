@@ -1,0 +1,34 @@
+.highlight-text {
+    color: blue;
+    background-color: yellow;
+}
+
+#intro-paragraph {
+    color:white;
+    background-color: grey;
+}
+
+.fg-red {
+    color:red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.text-50-pct {
+    font-size: 1.5em;
+}
+
+body > ol > li {
+    font-size: 2em;
+}
+
+/*
+body li.xyz
+Searches for anything matching "li.xyz" in body
+*/
+/* This searches for each child */
+body > ol > li.xyz {
+    color:blueviolet;
+}
