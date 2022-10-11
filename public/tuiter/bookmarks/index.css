@@ -1,0 +1,137 @@
+body {
+    margin: 0px 16px;
+    border-left: 1px rgb(47, 51, 54) solid;
+    border-right: 1px rgb(47, 51, 54) solid;
+    background-color: black;
+}
+
+.wd-header {
+    padding:12px 0px 12px 16px;
+    border-bottom: 1px lightgray solid;
+}
+
+.wd-header > * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wd-title {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-user-handle {
+    color: lightgray;
+    font-size: 13px;
+}
+
+.wd-bookmark {
+    padding: 12px 0px 12px 16px;
+    border-bottom: 1px rgb(47, 51, 54) solid;
+}
+
+.wd-stop-float {
+    clear: both;
+}
+
+.wd-avatar {
+    float: left;
+}
+
+.wd-avatar > img {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-container-content {
+    margin-left: 12px;
+    float: left;
+}
+
+.wd-bookmark-user > p {
+    display: inline;
+    margin: 0px 2px 0px;
+}
+
+.wd-bookmark-name, .wd-bookmark-content {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-bookmark-handle, .wd-bookmark-date {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-bookmark-content {
+    max-width: 506px;
+    padding-right: 16px;
+    margin: 12px 0px;
+}
+
+.wd-bookmark-content > p {
+    margin: 0px;
+}
+
+.wd-bookmark-link-img > img {
+    width: 504px;
+    max-height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px lightgray solid;
+    border-bottom: none;
+    display: block;
+}
+
+.wd-bookmark-link-content {
+    width: 504px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px lightgray solid;
+}
+
+.wd-bookmark-link-content > p {
+    font-size: 15px;
+    padding: 12px;
+    margin: 0px;
+}
+
+.wd-bookmark-link-title {
+    font-weight: bold;
+    color: white;
+}
+
+.wd-bookmark-link-text, .wd-bookmark-icon {
+    color: lightgray;
+}
+
+.wd-bookmark-icon-tab {
+    padding-top: 12px;
+}
+
+.wd-bookmark-icon-pair {
+    float: left;
+    width: 25%;
+}
+
+.wd-bookmark-icon-pair > a {
+    text-decoration: none;
+}
+
+.wd-bookmark-icon-pair > a > p {
+    display: inline;
+}
+
+.wd-bookmark-icon {
+    margin-right: 12px;
+    padding: 0px;
+}
+
+.wd-bookmark-icon-number {
+    color: lightgray;
+}
+
+.wd-bookmark-icon-heart {
+    color: red;
+}
