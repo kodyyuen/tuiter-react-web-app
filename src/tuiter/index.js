@@ -1,7 +1,7 @@
 import React from "react";
-import '../vendors/bootstrap/css/bootstrap.min.css';
-import '../vendors/bootswatch/bootstrap.min.css';
-import '../vendors/fontawesome/css/all.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootswatch/dist/cyborg/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list"
 import ExploreComponent from "./explore"

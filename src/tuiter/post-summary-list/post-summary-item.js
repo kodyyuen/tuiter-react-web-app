@@ -26,7 +26,7 @@ const PostSummaryItem = ({
                 </div>
                 <div className="d-flex align-items-center col-sm-3 col-md-2 p-2">
                     <img src={`../images/${post.image}`}
-                        className="rounded w-100" />
+                        className="rounded w-100" alt=""/>
                 </div>
             </div>
         </div>

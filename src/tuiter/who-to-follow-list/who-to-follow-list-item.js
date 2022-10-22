@@ -13,7 +13,7 @@ const WhoToFollowListItem = ({
             <div className="row d-flex align-items-center">
                 <div className="col-2">
                     <img src={`../images/${who.avatarIcon}`}
-                        className="rounded-circle" width="50px" />
+                        className="rounded-circle" width="50px" alt=""/>
                 </div>
                 <div className="col-6 text-nowrap">
                     <div className="col-12">
