@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/*" element={<Labs />}></Route>
           <Route path="/hello" element={<HelloWorld />}></Route>
-          <Route path="tuiter" element={<Tuiter />}></Route>
+          <Route path="/tuiter/*" element={<Tuiter />}></Route>
         </Routes>
       </div>
     </BrowserRouter>

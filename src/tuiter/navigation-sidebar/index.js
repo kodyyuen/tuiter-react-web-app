@@ -1,47 +1,48 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const { pathname } = useLocation();
+    const paths = pathname.split('/');
+    const active = paths[2];
     return (
         <>
             <div className="list-group mb-2">
                 <span className="list-group-item">
                     <i className="fab fa-twitter"></i>
                 </span>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ''}`}>
+                <Link to="/tuiter" className={`list-group-item list-group-item-action ${active === '' ? 'active' : ''}`}>
                     <i className="fa fa-home"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Home</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'explore' ? 'active' : ''}`}>
                     <i className="fa fa-hashtag"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Explore</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/notifications" className={`list-group-item list-group-item-action ${active === 'notifications' ? 'active' : ''}`}>
                     <i className="fa fa-bell"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Notifications</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/messages" className={`list-group-item list-group-item-action ${active === 'messages' ? 'active' : ''}`}>
                     <i className="fa fa-envelope"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Messages</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/bookmarks" className={`list-group-item list-group-item-action ${active === 'bookmarks' ? 'active' : ''}`}>
                     <i className="fa fa-bookmark"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Bookmarks</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/lists" className={`list-group-item list-group-item-action ${active === 'lists' ? 'active' : ''}`}>
                     <i className="fa fa-list"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Lists</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/profile" className={`list-group-item list-group-item-action ${active === 'profile' ? 'active' : ''}`}>
                     <i className="fa fa-user"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Profile</span>
-                </a>
-                <a href="#home" className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
+                </Link>
+                <Link to="/tuiter/more" className={`list-group-item list-group-item-action ${active === 'more' ? 'active' : ''}`}>
                     <span className="d-none d-xl-inline d-xxl-inline">More</span>
-                </a>
+                </Link>
             </div>
             <button className="btn rounded-pill bg-primary text-white w-100">Tuit</button>
         </>
