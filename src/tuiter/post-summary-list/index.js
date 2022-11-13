@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import PostSummaryItem from "./post-summary-item";
 
 const PostSummaryList = () => {
-    const {tuits, loading} = useSelector(
+    const {tuits} = useSelector(
         (state) => state.tuitsData
     );
     
