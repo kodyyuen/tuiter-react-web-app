@@ -35,7 +35,7 @@ const ExploreComponent = () => {
 
             <div className="position-relative">
                 <img src="../../images/starship.png" className="w-100" alt=""/>
-                <h1 class="wd-image-text">SpaceX Starship</h1>
+                <h1 className="wd-image-text">SpaceX Starship</h1>
             </div>
             <PostSummaryList />
         </>

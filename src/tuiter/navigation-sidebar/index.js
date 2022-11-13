@@ -12,7 +12,7 @@ const NavigationSidebar = () => {
                 <span className="list-group-item">
                     <i className="fab fa-twitter"></i>
                 </span>
-                <Link to="/tuiter" className={`list-group-item list-group-item-action ${active === '' ? 'active' : ''}`}>
+                <Link to="/tuiter/" className={`list-group-item list-group-item-action ${active === '' ? 'active' : ''}`}>
                     <i className="fa fa-home"></i>
                     <span className="d-none d-xl-inline d-xxl-inline">Home</span>
                 </Link>
