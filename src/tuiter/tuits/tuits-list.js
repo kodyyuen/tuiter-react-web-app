@@ -11,7 +11,7 @@ const TuitsList = () => {
     const dispatch = useDispatch();
 
     //eslint-disable-next-line
-    useEffect(() => { dispatch(findTuitsThunk()) }, []);
+    useEffect(() => { dispatch(findTuitsThunk()) });
 
     return (
         <div className="mt-2 bg-light list-group">
